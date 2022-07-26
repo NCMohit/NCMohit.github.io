@@ -9,6 +9,7 @@
     <title>Portfolio</title>
 </head>
 <body class="body md:w-1/2">
+    <button id="mode" class="float-right" onclick="mode()">Light Mode</button>
     <div id="main">
         <div class="m-8">
             <div class="text-4xl font-display font-semibold w-full">N.C.Mohit</div> 
@@ -149,5 +150,25 @@
         </div>
     </div>
     <hr>
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+        const mode_button = document.getElementById("mode");
+        body.style.color = "white";
+        body.style.backgroundColor = "#555555";
+        mode_button.innerHTML = "Light Mode";
+        function mode(){
+            console.log(body.style);
+            if(body.style.color == "black"){
+                body.style.color = "white";
+                body.style.backgroundColor = "#555555";
+                mode_button.innerHTML = "Light Mode";
+            }
+            else if(body.style.color == "white"){
+                body.style.color = "black";
+                body.style.backgroundColor = "white";
+                mode_button.innerHTML = "Dark Mode";
+            }
+        }
+    </script>
 </body>
 </html>
