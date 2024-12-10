@@ -1,177 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ZFqpITShJaWdAGUWRejYotc2Mz0mFCoGvE6ttpUI2w0" />
     <link rel="stylesheet" type="text/css" href="mycss.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">  
-    <title>Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>PortFolio</title>
 </head>
-<body class="body md:w-1/2">
-    <button id="mode" class="float-right" onclick="mode()">Light Mode</button>
-    <div id="main">
-        <div class="m-8">
-            <div class="text-4xl font-display font-semibold w-full">N.C.Mohit</div> 
+<body>
+    <div class="sidebar border-4">
+        <div class="h-30">
+            <h1>N C Mohit</h1>
+            <h2>Cognitive Data Scientist</h2>
         </div>
-        <div class="ml-8">
-            <div class="text-2xl font-display font-semibold w-full">Cognitive Data Scientist</div>    
-        </div>
-        <br>
-        <div class="m-4">
-            <div class="rounded-lg">
-                <img class="rounded-lg" src="assets/mohit_pic.PNG">
-            </div>
-            <div class="rounded-lg">
-                <h3 class="font-serif md:text-2xl font-diplay m-4 mb-0">About</h3><br>
-                <h3 class="font-serif md:text-xl font-diplay m-4 mt-0">I'm a programming enthusiast interested in learning and applying upcoming new technologies, proficient in debugging, optimization and integration of software. Currently pursuing studies in the field of Artificial Intelligence and looking forward to expand my skill set and gain real-world experience. Familiar with several required techniques and processes such as data mining, Computer Vision and DBMS, and looking for oppurtunities to learn and hone my skills.</h3>
-            </div>
-        </div>
-        <div class="m-8 flex justify-center" style="text-align: center;">
-            <a class="mx-4" href="https://github.com/NCMohit" target="_blank"><img src="assets/git.png" style="width: 50px;height: 50px;border-radius: 50%;"></a>
-            <a class="mx-4" href="https://www.linkedin.com/in/n-c-mohit-a64295170/" target="_blank"><img src="assets/linkedin.png" style="width: 50px;height: 50px"></a>
-            <a class="mx-4" href="mailto:ncmohit2001@gmail.com"><img src="assets/gmail.png" style="width: 50px;height: 50px;border-radius: 50%;" data-toggle="modal" data-target="#gmail"></a>
-            <a class="mx-4" href="tel:7780341997"><img src="assets/phone.png" style="width: 50px;height: 50px" data-toggle="modal" data-target="#contact"></a>
+        <div class="t-center">
+            <a href="#aboutme"><h3>About Me</h3></a>
+            <a href="#skills"><h3>Skills</h3></a>
+            <a href="#experience"><h3>Experience</h3></a>
+            <a href="#projects"><h3>Projects</h3></a>
+            <a href="#education"><h3>Education</h3></a>
         </div>
     </div>
-    <div id="section1">
-        <a target="_blank" href="NCMohit_Resume.pdf">
-            <div class="mx-auto my-8 border-2 w-1/3" style="background-color: #444444;">
-                <h3 class="my-4 text-xl text-white font-serif text-center">Resume</h3>
-            </div>
-        </a>
-    </div>
-    <hr>
-    <div id="section2">
-        <div class="m-4">
-            <div class="rounded-lg w-full">
-                <h3 class="text-4xl font-serif font-diplay m-4 mb-0">Technical Skillset</h3><br>
-                <div class="md:flex">
-                    <div class="rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-xl font-diplay m-4 mb-0">Programming Languages</h3><br>
-                        <h3 class="font-serif md:text-xl font-diplay mx-8 mt-0"><ul style="list-style: square;"><li><img class="h-4 inline" src="assets/python.png">Python</li><li><img class="h-4 inline" src="assets/java.png">Java</li><li><img class="h-4 inline" src="assets/cpp.png">C++</li><li><img class="h-4 inline" src="assets/php.png">PHP</li><li><img class="h-4 inline" src="assets/js.png">JavaScript</li></ul></h3>
-                    </div>
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-xl font-diplay m-4 mb-0">Libraries and Frameworks</h3><br>
-                        <h3 class="font-serif md:text-xl font-diplay mx-8 mt-0"><ul style="list-style: square;"><li><img class="h-4 inline" src="assets/nltk.png" style="background-color: white;">NLTK</li><li><img class="h-4 inline" src="assets/numpy.png" style="background-color: white;">NumPy</li><li><img class="h-4 inline" src="assets/scikit.png">Scikit-Learn</li><li><img class="h-4 inline" src="assets/opencv.png">Open-CV</li><li><img class="h-4 inline" src="assets/pandas.png">Pandas</li></ul></h3>
-                    </div>
+    <div id="aboutme" class="h-screen">
+        <div class="box border-4">
+            <h1 class="h-20">About Me</h1>
+            <h3 class="t-justify h-20">I'm a programming enthusiast interested in learning and applying upcoming new technologies, proficient in debugging, optimization and integration of software. Currently pursuing studies in the field of Artificial Intelligence and looking forward to expand my skill set and gain real-world experience. Familiar with several required techniques and processes such as data mining, Computer Vision and DBMS, and looking for oppurtunities to learn and hone my skills.</h3>
+            <a target="_blank" href="NCMohit_Resume.pdf">
+                <div class="resume-button">
+                    <h3>Resume</h3>
                 </div>
-                <div class="md:flex">
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-xl font-diplay m-4 mb-0">Environments</h3><br>
-                        <h3 class="font-serif md:text-xl font-diplay mx-8 mt-0"><ul style="list-style: square;"><li><img class="h-4 inline" src="assets/windows.png" style="background-color: white;">Windows</li><li><img class="h-4 inline" src="assets/arch.png">Linux</li><li><img class="h-4 inline" src="assets/openbsd.png">OpenBSD</li><li><img class="h-4 inline" src="assets/aws.png">AWS Cloud</li><li><img class="h-4 inline" src="assets/azure.png">Azure Cloud</li></ul></h3>
-                    </div>
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-xl font-diplay m-4 mb-0">DevOps</h3><br>
-                        <h3 class="font-serif md:text-xl font-diplay mx-8 mt-0"><ul style="list-style: square;"><li><img class="h-4 inline" src="assets/gitop.png">Git</li><li><img class="h-4 inline" src="assets/docker.png">Docker</li><li><img class="h-4 inline" src="assets/jenkins.png">Jenkins</li></ul></h3>
-                    </div>
+            </a>
+            <div class="links h-20 mt-8">
+                <a href="https://github.com/NCMohit" target="_blank"><img src="assets/git.png" style="width: 50px;height: 50px;border-radius: 50%;"></a>
+                <a href="https://www.linkedin.com/in/n-c-mohit-a64295170/" target="_blank"><img src="assets/linkedin.png" style="width: 50px;height: 50px"></a>
+                <a href="mailto:ncmohit2001@gmail.com"><img src="assets/gmail.png" style="width: 50px;height: 50px;border-radius: 50%;" data-toggle="modal" data-target="#gmail"></a>
+                <a href="tel:7780341997"><img src="assets/phone.png" style="width: 50px;height: 50px" data-toggle="modal" data-target="#contact"></a>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="h-screen">
+        <div class="box border-4">
+            <h1>Skills</h1>
+            <div class="card-banner">
+                <div class="card">
+                    <h3>Libraries</h3>
+                    <h3><ul style="list-style: square;"><li><img src="assets/nltk.png">NLTK</li><li><img src="assets/numpy.png">NumPy</li><li><img src="assets/scikit.png">Scikit-Learn</li><li><img src="assets/opencv.png">Open-CV</li><li><img src="assets/pandas.png">Pandas</li></ul></h3>
+                </div>
+                <div class="card">
+                    <h3>Environments</h3>
+                    <h3><ul style="list-style: square;"><li><img src="assets/windows.png">Windows</li><li><img src="assets/linux.png">Linux</li><li><img src="assets/openbsd.png">OpenBSD</li><li><img src="assets/aws.png">AWS Cloud</li><li><img src="assets/azure.png">Azure Cloud</li></ul></h3>
+                </div>
+            </div>
+            <div class="card-banner">
+                <div class="card">
+                    <h3>Programming Languages</h3>
+                    <h3><ul style="list-style: square;"><li><img src="assets/python.png">Python</li><li><img src="assets/java.png">Java</li><li><img src="assets/cpp.png">C++</li><li><img src="assets/php.png">PHP</li><li><img src="assets/js.png">JavaScript</li></ul></h3>
+                </div>
+                <div class="card">
+                    <h3>DevOps</h3>
+                    <h3><ul style="list-style: square;"><li><img src="assets/gitop.png">Git</li><li><img src="assets/docker.png">Docker</li><li><img src="assets/jenkins.png">Jenkins</li></ul></h3>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div id="section3">
-        <div class="m-4">
-            <div class="rounded-lg w-full">
-                <h3 class="text-4xl font-serif md:text-2xl font-diplay m-4 mb-0">Experience</h3><br>
-                <div class="m-2 rounded-lg md:w-full">
-                    <h3 class="text-xl font-serif md:text-2xl font-diplay m-4 mb-0">Cognitive Data Scientist</h3><br>
-                    <h3 class="text-md font-serif md:text-xl font-diplay m-4 my-0">IBM, Hyderabad</h3>
-                    <h3 class="text-md font-serif md:text-xl font-diplay m-4 my-0">Sept 2022 - Present</h3>
-                    <h3 class="text-md font-serif md:text-xl font-diplay mx-8 my-0"><ul style="list-style: square;"><li>Project: Kyndryl Anthem Analytics</li></ul></h3><br>
+    <div id="experience" class="h-screen">
+        <div class="box border-4">
+            <h1>Experience</h1>
+            <div class="card-banner">
+                <div class="card">
+                    <h2>Cognitive Data Scientist</h2>
+                    <h3>IBM Hyderabad</h3>
+                    <h3>Sept 2022 - Present</h3>
+                    <h3>Projects</h3>
+                    <h3><ul style="list-style: square;"><li>BPO Transition</li><li>Kyndryl Anthem Analytics</li></ul></h3>
                 </div>
-                <hr>
-                <div class="m-2 rounded-lg md:w-full">
-                    <h3 class="text-xl font-serif md:text-2xl font-diplay m-4 mb-0">Data Science - Industry Practice</h3><br>
-                    <h3 class="text-md font-serif md:text-xl font-diplay m-4 my-0">IBM, Banglore</h3>
-                    <h3 class="text-md font-serif md:text-xl font-diplay m-4 my-0">Jan 2022 - June 2022</h3>
-                    <h3 class="text-md font-serif md:text-xl font-diplay mx-8 my-0"><ul style="list-style: square;"><li>Project: AI at Scale</li></ul></h3><br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div id="section4">
-        <div class="m-4">
-            <div class="rounded-lg w-full">
-                <h3 class="font-serif text-4xl font-diplay m-4 mb-0">University Projects</h3><br>
-                <div class="md:flex">
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-2xl font-diplay m-4 mb-0">GAIT Recognition</h3><br>
-                        <h3 class="text-md font-serif md:text-xl font-diplay m-4 mt-0">A novel approach to use Image moments as a unique feature for detecting GAIT signatures.</h3>
-                        <a target="_blank" href="https://github.com/NCMohit/GAIT-Recognition-using-Image-Moments">
-                            <div class="mx-auto my-8 border-2 w-1/3" style="background-color: #444444;">
-                                <h3 class="my-4 text-xl text-white font-serif text-center">Link</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-2xl font-diplay m-4 mb-0">Spatial Network A-Star Clustering</h3><br>
-                        <h3 class="text-md font-serif md:text-xl font-diplay m-4 mt-0">A system that clusters Californian road network dataset, and uses it as a heuristic for calculating shortest path between two nodes using A-star algorithm.</h3>
-                        <a target="_blank" href="https://github.com/NCMohit/SpatialNetworkAStarClustering">
-                            <div class="mx-auto my-8 border-2 w-1/3" style="background-color: #444444;">
-                                <h3 class="my-4 text-xl text-white font-serif text-center">Link</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="md:flex">
-                    <div class="m-2 rounded-lg md:w-1/2">
-                        <h3 class="font-serif md:text-2xl font-diplay m-4 mb-0">Increase FPS of Video using ML Interpolation</h3><br>
-                        <h3 class="font-serif md:text-xl font-diplay m-4 mt-0">A technique to synthesize frames by isolating and predicting positions of objects and using them to interpolate between two frames, increasing fps of video.</h3>
-                    </div>
+                <div class="card">
+                    <h2>Data Science Internship</h2>
+                    <h3>IBM</h3>
+                    <h3>Jan 2022 - June 2022</h3>
+                    <h3>Projects</h3>
+                    <h3><ul style="list-style: square;"><li>AI at Scale</li></ul></h3>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div id="section5">
-        <div class="m-4">
-            <div class="rounded-lg w-full">
-                <h3 class="text-4xl font-serif md:text-2xl font-diplay m-4 mb-0">Education</h3><br>
-                <div class="m-2 rounded-lg md:w-full">
-                    <h3 class="text-xl font-serif md:text-2xl font-diplay m-4 mb-0">B.Tech Computer Science and Technology </h3><br>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">National Institute of Information and Technology University, Neemrana</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">Jul 2018 - Aug 2022</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">CGPA: 9.07 / 10</h3><br>
+    <div id="projects" class="h-screen">
+        <div class="box border-4">
+            <h1>Projects</h1>
+            <div>
+                <div class="card-full">
+                    <a target="_blank" href="https://github.com/NCMohit/GAIT-Recognition-using-Image-Moments"><h2>GAIT Recognition</h2></a>
+                    <h3>A novel approach to use Image moments as a unique feature for detecting GAIT signatures.</h3>
                 </div>
-                <hr>
-                <div class="m-2 rounded-lg md:w-full">
-                    <h3 class="text-xl font-serif md:text-2xl font-diplay m-4 mb-0">Senior Secondary Education</h3><br>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">Narayana Jr College , Hyderabad</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">AY 2016 - AY 2018</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">GPA: 926/1000</h3><br>
+                <div class="card-full">
+                    <a target="_blank" href="https://github.com/NCMohit/SpatialNetworkAStarClustering"><h2>Spatial Network A-Star Clustering</h2></a>
+                    <h3>A system that clusters Californian road network dataset, and uses it as a heuristic for calculating shortest path between two nodes using A-star algorithm.</h3>
                 </div>
-                <hr>
-                <div class="m-2 rounded-lg md:w-full">
-                    <h3 class="text-xl font-serif md:text-2xl font-diplay m-4 mb-0">Secondary Education</h3><br>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">Narayana Techno School, Hyderabad</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">AY 2015 - AY 2016</h3>
-                    <h3 class="font-serif md:text-xl font-diplay m-4 my-0">CGPA: 10 / 10</h3><br>
+                <div class="card-full">
+                    <a href="#projects"><h2>Video Frame Interpolation using ML</h2></a>
+                    <h3>A technique to synthesize frames by isolating and predicting positions of objects and using them to interpolate between two frames, increasing fps of video.</h3>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <script>
-        const body = document.getElementsByTagName("body")[0];
-        const mode_button = document.getElementById("mode");
-        body.style.color = "white";
-        body.style.backgroundColor = "#555555";
-        mode_button.innerHTML = "Light Mode";
-        function mode(){
-            console.log(body.style);
-            if(body.style.color == "black"){
-                body.style.color = "white";
-                body.style.backgroundColor = "#555555";
-                mode_button.innerHTML = "Light Mode";
-            }
-            else if(body.style.color == "white"){
-                body.style.color = "black";
-                body.style.backgroundColor = "white";
-                mode_button.innerHTML = "Dark Mode";
-            }
-        }
-    </script>
+    <div id="education" class="h-screen">
+        <div class="box border-4">
+            <h1>Education</h1>
+            <div class="card-banner">
+                <div class="card">
+                    <h2>B.Tech Computer Science and Technology</h2>
+                    <h3>National Institute of Information and Technology University, Neemrana</h3>
+                    <h3>Jul 2018 - Aug 2022</h3>
+                    <h3>CGPA: 9.07 / 10</h3>
+                </div>
+                <div class="card">
+                    <h2>Senior Secondary Education</h2>
+                    <h3>Narayana Jr College , Hyderabad</h3>
+                    <h3>AY 2016 - AY 2018</h3>
+                    <h3>GPA: 926/1000</h3>
+                </div>
+            </div>
+            <div class="card-banner">
+                <div class="card">
+                    <h2>Secondary Education</h2>
+                    <h3>Narayana Techno School, Hyderabad</h3>
+                    <h3>AY 2015 - AY 2016</h3>
+                    <h3>CGPA: 10 / 10</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html> 
